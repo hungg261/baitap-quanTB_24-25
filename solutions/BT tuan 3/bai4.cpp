@@ -20,7 +20,7 @@ signed main(){
     int target=*max_element(mark,mark+MAX+1);
     for(int i=0;i<=MAX;++i){
         if(mark[i]==target){
-            cout<<i<<' ';
+            cout<<i<<'\n';
         }
     }
     return 0;
