@@ -7,7 +7,7 @@ signed main(){
     int n;
     cin>>n;
     
-    int a=ceil(sqrtl(n));
+    int a=ceil(sqrt(n));
     if((a-1)*a>=n)cout<<(a-1+a)*2<<'\n';
     else cout<<a*4<<'\n';
     return 0;
