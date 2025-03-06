@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#define int long long
 using namespace std;
 
 const int MAXN=50000;
@@ -7,7 +8,7 @@ int n,k,a[MAXN];
 bool check(int mid){
     int cnt=0;
     for(int i=0;i<n;){
-        i=upper_bound(a,a+n,a[i]+2*mid+1)-a;
+        i=upper_bound(a,a+n,a[i]+2*mid)-a;
         ++cnt;
     }
     return cnt<=k;
